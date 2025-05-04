@@ -217,3 +217,4 @@
     <tr><td>timestamps</td><td>timestamp</td><td>created_at & updated_at</td></tr>
   </tbody>
 </table>
+
