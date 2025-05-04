@@ -1,31 +1,35 @@
-<h2>👤 1. Admin</h2>
+<h2>Role</h2>
+<h2>1. Admin</h2>
 <p><strong>Tugas:</strong> Mengelola pengguna, manajemen sistem.</p>
 
-<h3>Menu Admin:</h3>
+<h3>Fitur Admin:</h3>
 <ul>
   <li>Dashboard Admin</li>
-  <li>Kelola Pengguna (tambah, lihat, hapus user)</li>
+  <li>Kelola Pengguna (tambah, lihat,edit, hapus user)</li>
+   <li>Lihat Data Kategori (opsional untuk pengawasan)</li>
   <li>Lihat Data Produk (opsional untuk pengawasan)</li>
   <li>Lihat Data Pesanan (opsional)</li>
   <li>Lihat Laporan Pembayaran (opsional)</li>
   <li>Lihat Ulasan & Verifikasi (opsional)</li>
+  <li>Lihat Wisata (opsional)</li>
 </ul>
 
 <h3>Tabel yang Dikelola:</h3>
 <ul>
-  <li><code>users</code> – tambah, ubah, hapus user</li>
-  <li><em>(opsional)</em> <code>produk</code>, <code>pesanan</code>, <code>pembayaran</code>, <code>ulasan</code></li>
+  <li><code>users</code> – tambah, ubah,lihat, hapus user</li>
+  <li><em>(opsional)</em> <code>produk</code>, <code>pesanan</code>, <code>pembayaran</code>, <code>ulasan</code><code>Kategori</code><code>Wisata</code></li>
 </ul>
 
 <hr>
 
-<h2>🛍️ 2. Kreator (Penjual)</h2>
-<p><strong>Tugas:</strong> Mengelola produk, melihat dan memverifikasi pesanan & pembayaran.</p>
+<h2>2. Kreator (Penjual)</h2>
+<p><strong>Fitur:</strong> Mengelola produk, melihat dan memverifikasi pesanan & pembayaran serta mengelola informasi wisata.</p>
 
 <h3>Menu Kreator:</h3>
 <ul>
   <li>Dashboard Kreator</li>
-  <li>Kelola Produk (tambah, edit, hapus)</li>
+  <li>Kelola Produk (tambah,lihat, edit, hapus)</li>
+  <li>Kelola Wisata (tambah,lihat, edit, hapus)</li>
   <li>Lihat Pesanan Masuk</li>
   <li>Verifikasi Pembayaran</li>
   <li>Lihat Ulasan Produk</li>
@@ -35,6 +39,7 @@
 <h3>Tabel yang Dikelola:</h3>
 <ul>
   <li><code>produk</code> – buat produk baru, ubah stok</li>
+  <li><code>wisata</code> – mengelola wisata</li>
   <li><code>kategori</code> – kategori produk (jika diizinkan)</li>
   <li><code>pembayaran</code> – ubah status pembayaran</li>
   <li><code>ulasan</code> – verifikasi ulasan</li>
@@ -42,7 +47,7 @@
 
 <hr>
 
-<h2>🛒 3. Pembeli (User biasa)</h2>
+<h2>3. Pembeli (User biasa)</h2>
 <p><strong>Tugas:</strong> Melihat produk, melakukan pemesanan, unggah bukti pembayaran, memberi ulasan.</p>
 
 <h3>Menu Pembeli:</h3>
