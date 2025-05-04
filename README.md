@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>README – Explore Mandar</title>
   <style>
     /* Tabel umum */
     table { width: 100%; border-collapse: collapse; margin-bottom: 1.5em; }
@@ -17,7 +14,7 @@
   <!-- Sampul -->
   <div style="height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
     <h2 style="margin:0; font-size:3em; color:#333;">EXPLORE MANDAR</h2>
-    <img src="img/th.jpg" alt="Logo Explore Mandar"
+    <img src="th.jpg" alt="Logo Explore Mandar"
          style="display:block; margin:1em auto; max-width:80%; height:auto;" />
     <h2 style="margin:0; font-size:2em; color:#333;">RAHMADI</h2>
     <h2 style="margin:0; font-size:2em; color:#333;">D0223309</h2>
