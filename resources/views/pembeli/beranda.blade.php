@@ -14,7 +14,7 @@
 
           <!-- Featured Post (Large) -->
           <article class="blog-item featured" data-aos="fade-up">
-            <img src="assets/img/blog/blog-post-3.webp" alt="Blog Image" class="img-fluid">
+            <img src="{{ asset('assets/img/favicon.png') }}" alt="Blog Image" class="img-fluid">
             <div class="blog-content">
               <div class="post-meta">
                 <span class="date">Apr. 14th, 2025</span>

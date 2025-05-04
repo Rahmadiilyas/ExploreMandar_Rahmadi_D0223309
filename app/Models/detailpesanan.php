@@ -12,6 +12,6 @@ class detailpesanan extends Model
         return $this->belongsTo(produk::class);
     }
     public function pesanan(){
-        return $this->belongsTo(pesanan::class);
+        return $this->belongsTo(pesanan::class, 'pesanan_id');
     }
 }

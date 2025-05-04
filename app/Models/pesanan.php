@@ -9,13 +9,13 @@ class pesanan extends Model
     protected $table = 'pesanan';
     protected $guarded = [];
     public function users(){
-        return $this->belongsTo(pengguna::class);
+        return $this->belongsTo(pengguna::class, 'user_id');
     }
     public function produk(){
-        return $this->belongsToMany(produk::class, 'detailpesanan')->withPivot('jumlah', 'sub_total');
+        return $this->belongsTo(produk::class);
     }
     public function detailpesanan(){
-        return $this->hasMany(detailpesanan::class);
+        return $this->hasMany(detailpesanan::class, 'pesanan_id');
     }
     public function pembayaran(){
         return $this->hasOne(pembayaran::class);

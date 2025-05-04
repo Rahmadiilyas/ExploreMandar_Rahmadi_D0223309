@@ -13,7 +13,7 @@ class pengguna extends Model
     }
 
     public function pesanan(){
-        return $this->hasMany(pesanan::class);
+        return $this->hasMany(pesanan::class, 'user_id');
     }
     public function ulasan(){
         return $this->hasMany(ulasan::class);
@@ -21,4 +21,5 @@ class pengguna extends Model
     public function keranjang(){
         return $this->hasMany(keranjang::class);
     }
+
 }

@@ -19,7 +19,7 @@ class adminMiddleware
         if (Auth::check() && Auth::user()->role === 'admin') {
             return $next($request); // lanjutkan request
         }
-
+        abort(403, 'Akses hanya untuk admin.');
         // Jika bukan user dengan role 'pembeli', redirect ke halaman login
         return redirect('/login');
     }
