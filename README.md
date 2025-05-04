@@ -1,3 +1,11 @@
+<h2 style="text-align: center; font-size: 36px; color: #333; margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center;">EXPLORE MANDAR</h2>
+<img src="public/img/th.jpg" alt="Gambar" style="display: block; margin-left: auto; margin-right: auto;" />
+
+<h2 style="text-align: center; font-size: 36px; color: #333; margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center;">RAHMADI</h2>
+<h2 style="text-align: center; font-size: 36px; color: #333; margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center;">D0223309</h2>
+<h2 style="text-align: center; font-size: 36px; color: #333; margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center;">FRAMEWORK WEB BASED</h2>
+<h2 style="text-align: center; font-size: 36px; color: #333; margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center;">2025</h2>
+
 <h2>Role</h2>
 <h2>1. Admin</h2>
 <p><strong>Tugas:</strong> Mengelola pengguna, manajemen sistem.</p>
