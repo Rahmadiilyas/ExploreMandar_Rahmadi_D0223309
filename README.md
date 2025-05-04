@@ -1,3 +1,68 @@
+<h2>👤 1. Admin</h2>
+<p><strong>Tugas:</strong> Mengelola pengguna, manajemen sistem.</p>
+
+<h3>Menu Admin:</h3>
+<ul>
+  <li>Dashboard Admin</li>
+  <li>Kelola Pengguna (tambah, lihat, hapus user)</li>
+  <li>Lihat Data Produk (opsional untuk pengawasan)</li>
+  <li>Lihat Data Pesanan (opsional)</li>
+  <li>Lihat Laporan Pembayaran (opsional)</li>
+  <li>Lihat Ulasan & Verifikasi (opsional)</li>
+</ul>
+
+<h3>Tabel yang Dikelola:</h3>
+<ul>
+  <li><code>users</code> – tambah, ubah, hapus user</li>
+  <li><em>(opsional)</em> <code>produk</code>, <code>pesanan</code>, <code>pembayaran</code>, <code>ulasan</code></li>
+</ul>
+
+<hr>
+
+<h2>🛍️ 2. Kreator (Penjual)</h2>
+<p><strong>Tugas:</strong> Mengelola produk, melihat dan memverifikasi pesanan & pembayaran.</p>
+
+<h3>Menu Kreator:</h3>
+<ul>
+  <li>Dashboard Kreator</li>
+  <li>Kelola Produk (tambah, edit, hapus)</li>
+  <li>Lihat Pesanan Masuk</li>
+  <li>Verifikasi Pembayaran</li>
+  <li>Lihat Ulasan Produk</li>
+  <li><em>(opsional)</em> Kelola Kategori</li>
+</ul>
+
+<h3>Tabel yang Dikelola:</h3>
+<ul>
+  <li><code>produk</code> – buat produk baru, ubah stok</li>
+  <li><code>kategori</code> – kategori produk (jika diizinkan)</li>
+  <li><code>pembayaran</code> – ubah status pembayaran</li>
+  <li><code>ulasan</code> – verifikasi ulasan</li>
+</ul>
+
+<hr>
+
+<h2>🛒 3. Pembeli (User biasa)</h2>
+<p><strong>Tugas:</strong> Melihat produk, melakukan pemesanan, unggah bukti pembayaran, memberi ulasan.</p>
+
+<h3>Menu Pembeli:</h3>
+<ul>
+  <li>Dashboard Pembeli</li>
+  <li>Lihat Produk</li>
+  <li>Tambah ke Keranjang</li>
+  <li>Checkout & Buat Pesanan</li>
+  <li>Upload Bukti Pembayaran</li>
+  <li>Lihat Status Pembayaran</li>
+  <li>Tulis Ulasan</li>
+</ul>
+
+<h3>Tabel yang Dikelola:</h3>
+<ul>
+  <li><code>keranjang</code> – tambah produk ke keranjang</li>
+  <li><code>pesanan</code> – buat pesanan dan lihat status</li>
+  <li><code>ulasan</code> – tulis ulasan produk</li>
+</ul>
+
 <h3>Table: users</h3>
 <table border="1">
   <thead>
