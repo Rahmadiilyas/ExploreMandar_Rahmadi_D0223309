@@ -38,6 +38,7 @@ return new class extends Migration
         Schema::create('produk', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
+            $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
             $table->integer('harga');
             $table->text('deskripsi');
             $table->foreignId('kategori_id')->constrained('kategori')->cascadeOnDelete();
@@ -147,6 +148,6 @@ return new class extends Migration
         Schema::dropIfExists('produk');
         Schema::dropIfExists('kategori');
         Schema::dropIfExists('users');
-        Schema::dropIfExists('roles');
+      
     }
 };

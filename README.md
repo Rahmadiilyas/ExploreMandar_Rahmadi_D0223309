@@ -217,4 +217,150 @@
     <tr><td>timestamps</td><td>timestamp</td><td>created_at & updated_at</td></tr>
   </tbody>
 </table>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relasi Antar Tabel</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relasi Antar Tabel dan Jenis Relasi</h1>
+
+    <h2>Tabel Relasi dan Jenisnya (Ringkas)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Relasi</th>
+                <th>Tabel A</th>
+                <th>Tabel B</th>
+                <th>Jenis Relasi</th>
+                <th>Keterangan</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>users → pesanan</td>
+                <td>users</td>
+                <td>pesanan</td>
+                <td>One to Many</td>
+                <td>1 user bisa membuat banyak pesanan</td>
+            </tr>
+            <tr>
+                <td>users → keranjang</td>
+                <td>users</td>
+                <td>keranjang</td>
+                <td>One to Many</td>
+                <td>1 user bisa memiliki banyak item di keranjang</td>
+            </tr>
+            <tr>
+                <td>users → ulasan</td>
+                <td>users</td>
+                <td>ulasan</td>
+                <td>One to Many</td>
+                <td>1 user bisa memberikan banyak ulasan</td>
+            </tr>
+            <tr>
+                <td>produk → keranjang</td>
+                <td>produk</td>
+                <td>keranjang</td>
+                <td>One to Many</td>
+                <td>1 produk bisa masuk ke banyak keranjang</td>
+            </tr>
+            <tr>
+                <td>produk → ulasan</td>
+                <td>produk</td>
+                <td>ulasan</td>
+                <td>One to Many</td>
+                <td>1 produk bisa memiliki banyak ulasan</td>
+            </tr>
+            <tr>
+                <td>produk → kategori</td>
+                <td>produk</td>
+                <td>kategori</td>
+                <td>Many to One</td>
+                <td>Banyak produk termasuk dalam satu kategori</td>
+            </tr>
+            <tr>
+                <td>kategori → produk</td>
+                <td>kategori</td>
+                <td>produk</td>
+                <td>One to Many</td>
+                <td>1 kategori memiliki banyak produk</td>
+            </tr>
+            <tr>
+                <td>pesanan → detail_pesanan</td>
+                <td>pesanan</td>
+                <td>detail_pesanan</td>
+                <td>One to Many</td>
+                <td>1 pesanan punya banyak detail pesanan</td>
+            </tr>
+            <tr>
+                <td>pesanan → pembayaran</td>
+                <td>pesanan</td>
+                <td>pembayaran</td>
+                <td>One to One</td>
+                <td>1 pesanan hanya memiliki 1 data pembayaran</td>
+            </tr>
+            <tr>
+                <td>detail_pesanan → produk</td>
+                <td>detail_pesanan</td>
+                <td>produk</td>
+                <td>Many to One</td>
+                <td>Setiap detail pesanan merujuk ke 1 produk</td>
+            </tr>
+            <tr>
+                <td>wisata → galeri</td>
+                <td>wisata</td>
+                <td>galeri</td>
+                <td>One to Many</td>
+                <td>1 tempat wisata memiliki banyak galeri</td>
+            </tr>
+            <tr>
+                <td>galeri → wisata</td>
+                <td>galeri</td>
+                <td>wisata</td>
+                <td>Many to One</td>
+                <td>Setiap galeri milik 1 tempat wisata</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Relasi Many to Many (via Pivot)</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Tabel A</th>
+                <th>Pivot/Tabel Penghubung</th>
+                <th>Tabel B</th>
+                <th>Kolom Tambahan di Pivot</th>
+                <th>Jenis Relasi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>pesanan</td>
+                <td>detail_pesanan</td>
+                <td>produk</td>
+                <td>jumlah, sub_total</td>
+                <td>Many to Many</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
 

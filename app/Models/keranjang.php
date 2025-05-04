@@ -10,7 +10,7 @@ class keranjang extends Model
     protected $guarded = [];
 
     public function user(){
-        return $this->belongsToMany(pengguna::class);
+        return $this->belongsTo(pengguna::class);
     }
     public function produk(){
         return $this->belongsTo(produk::class);

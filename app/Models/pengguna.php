@@ -8,8 +8,9 @@ class pengguna extends Model
 {
     protected $table = 'users';
     protected $guarded = [];
-    public function role(){
-        return $this->belongsTo(role::class);
+
+    public function produk(){
+        return $this->hasMany(produk::class);
     }
 
     public function pesanan(){
