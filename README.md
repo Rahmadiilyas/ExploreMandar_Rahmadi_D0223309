@@ -16,8 +16,8 @@
 
 <h3>Tabel yang Dikelola:</h3>
 <ul>
-  <li><code>users</code> – tambah, ubah,lihat, hapus user</li>
-  <li><em>(opsional)</em> <code>produk</code>, <code>pesanan</code>, <code>pembayaran</code>, <code>ulasan</code><code>Kategori</code><code>Wisata</code></li>
+  <li>users – tambah, ubah,lihat, hapus user</li>
+  <li>(opsional) produk , pesanan , pembayaran , ulasan, Kategori, Wisata </li>
 </ul>
 
 <hr>
@@ -33,16 +33,16 @@
   <li>Lihat Pesanan Masuk</li>
   <li>Verifikasi Pembayaran</li>
   <li>Lihat Ulasan Produk</li>
-  <li><em>(opsional)</em> Kelola Kategori</li>
+  <li>(opsional) Kelola Kategori</li>
 </ul>
 
 <h3>Tabel yang Dikelola:</h3>
 <ul>
-  <li><code>produk</code> – buat produk baru, ubah stok</li>
-  <li><code>wisata</code> – mengelola wisata</li>
-  <li><code>kategori</code> – kategori produk (jika diizinkan)</li>
-  <li><code>pembayaran</code> – ubah status pembayaran</li>
-  <li><code>ulasan</code> – verifikasi ulasan</li>
+  <li>produk  – buat produk baru, ubah stok</li>
+  <li>wisata  – mengelola wisata</li>
+  <li>kategori  – kategori produk (jika diizinkan)</li>
+  <li>pembayaran  – ubah status pembayaran</li>
+  <li>ulasan  – verifikasi ulasan</li>
 </ul>
 
 <hr>
@@ -63,9 +63,9 @@
 
 <h3>Tabel yang Dikelola:</h3>
 <ul>
-  <li><code>keranjang</code> – tambah produk ke keranjang</li>
-  <li><code>pesanan</code> – buat pesanan dan lihat status</li>
-  <li><code>ulasan</code> – tulis ulasan produk</li>
+  <li>keranjang  – tambah produk ke keranjang</li>
+  <li>pesanan  – buat pesanan dan lihat status</li>
+  <li>ulasan  – tulis ulasan produk</li>
 </ul>
 
 <h3>Table: users</h3>
@@ -218,7 +218,7 @@
   </tbody>
 </table>
  <h1>Relasi Antar Tabel dan Jenis Relasi</h1>
-    <h2>Tabel Relasi dan Jenisnya (Ringkas)</h2>
+    <h2>Tabel Relasi dan Jenisnya</h2>
     <table>
         <thead>
             <tr>
@@ -316,7 +316,6 @@
             </tr>
         </tbody>
     </table>
-
     <h2>Relasi Many to Many (via Pivot)</h2>
     <table>
         <thead>
