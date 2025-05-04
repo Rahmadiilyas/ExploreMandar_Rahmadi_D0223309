@@ -217,30 +217,7 @@
     <tr><td>timestamps</td><td>timestamp</td><td>created_at & updated_at</td></tr>
   </tbody>
 </table>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relasi Antar Tabel</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-            border: 1px solid #ddd;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-    </style>
-</head>
-<body>
-    <h1>Relasi Antar Tabel dan Jenis Relasi</h1>
-
+ <h1>Relasi Antar Tabel dan Jenis Relasi</h1>
     <h2>Tabel Relasi dan Jenisnya (Ringkas)</h2>
     <table>
         <thead>
@@ -361,6 +338,4 @@
             </tr>
         </tbody>
     </table>
-</body>
-</html>
 
