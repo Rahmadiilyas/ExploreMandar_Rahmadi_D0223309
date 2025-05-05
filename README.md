@@ -8,8 +8,7 @@
   <!-- Sampul -->
   <div style="height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
     <h2 style="margin:0; font-size:3em; color:#333;">EXPLORE MANDAR</h2>
-    <img src="img/th.jpg" alt="Logo Explore Mandar" />
-         style="display:block; margin:1em auto; max-width:80%; height:auto;" />
+    <img src="img/th.jpg" alt="Logo Explore Mandar" style="display:block; margin:1em auto; max-width:80%; height:auto;" />
     <h2 style="margin:0; font-size:2em; color:#333;">RAHMADI</h2>
     <h2 style="margin:0; font-size:2em; color:#333;">D0223309</h2>
     <h2 style="margin:0; font-size:2em; color:#333;">FRAMEWORK WEB BASED</h2>
