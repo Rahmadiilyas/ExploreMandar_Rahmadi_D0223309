@@ -2,10 +2,7 @@
 <html lang="id">
 <head>
   <style>
-    table { width: 100%; border-collapse: collapse; margin-bottom: 1.5em; }
-    th, td { border: 1px solid #aaa; padding: 0.5em; text-align: left; }
-    th { background: #f0f0f0; }
-    hr { margin: 2em 0; }
+
   </style>
 </head>
 <body>
@@ -93,7 +90,7 @@
 
   <!-- Struktur Tabel -->
   <h3>Table: users</h3>
-  <table>
+  <table border='1'>
     <thead>
       <tr><th>Field</th><th>Tipe Data</th><th>Keterangan</th></tr>
     </thead>
@@ -112,7 +109,7 @@
   </table>
 
   <h3>Table: kategori</h3>
-  <table>
+  <table border='1'>
     <thead>
       <tr><th>Field</th><th>Tipe Data</th><th>Keterangan</th></tr>
     </thead>
@@ -124,7 +121,7 @@
   </table>
 
   <h3>Table: produk</h3>
-  <table>
+  <table border='1'>
     <thead>
       <tr><th>Field</th><th>Tipe Data</th><th>Keterangan</th></tr>
     </thead>
@@ -141,7 +138,7 @@
   </table>
 
   <h3>Table: pesanan</h3>
-  <table>
+  <table border='1'>
     <thead>
       <tr><th>Field</th><th>Tipe Data</th><th>Keterangan</th></tr>
     </thead>
@@ -158,7 +155,7 @@
   </table>
 
   <h3>Table: detail_pesanan</h3>
-  <table>
+  <table border='1'>
     <thead>
       <tr><th>Field</th><th>Tipe Data</th><th>Keterangan</th></tr>
     </thead>
@@ -173,7 +170,7 @@
   </table>
 
   <h3>Table: pembayaran</h3>
-  <table>
+  <table border='1'>
     <thead>
       <tr><th>Field</th><th>Tipe Data</th><th>Keterangan</th></tr>
     </thead>
@@ -191,7 +188,7 @@
   </table>
 
   <h3>Table: ulasan</h3>
-  <table>
+  <table border='1'>
     <thead>
       <tr><th>Field</th><th>Tipe Data</th><th>Keterangan</th></tr>
     </thead>
@@ -207,7 +204,7 @@
   </table>
 
   <h3>Table: wisata</h3>
-  <table>
+  <table border='1'>
     <thead>
       <tr><th>Field</th><th>Tipe Data</th><th>Keterangan</th></tr>
     </thead>
@@ -222,7 +219,7 @@
   </table>
 
   <h3>Table: galeri</h3>
-  <table>
+  <table border='1'>
     <thead>
       <tr><th>Field</th><th>Tipe Data</th><th>Keterangan</th></tr>
     </thead>
@@ -236,7 +233,7 @@
   </table>
 
   <h3>Table: keranjang</h3>
-  <table>
+  <table border='1'>
     <thead>
       <tr><th>Field</th><th>Tipe Data</th><th>Keterangan</th></tr>
     </thead>
@@ -252,7 +249,7 @@
   <!-- Relasi -->
   <h1>Relasi Antar Tabel dan Jenis Relasi</h1>
   <h2>Tabel Relasi dan Jenisnya</h2>
-  <table>
+  <table border='1'>
     <thead>
       <tr><th>Relasi</th><th>Tabel A</th><th>Tabel B</th><th>Jenis Relasi</th><th>Keterangan</th></tr>
     </thead>
@@ -273,7 +270,7 @@
   </table>
   
   <h2>Relasi Many to Many (via Pivot)</h2>
-  <table>
+  <table border='1'>
     <thead>
       <tr><th>Tabel A</th><th>Pivot</th><th>Tabel B</th><th>Kolom Tambahan</th><th>Jenis Relasi</th></tr>
     </thead>
