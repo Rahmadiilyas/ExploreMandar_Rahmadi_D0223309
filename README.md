@@ -6,7 +6,8 @@
 <body>
 
   <!-- Sampul -->
-  <div style="height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;">
+  
+  <div align="center">
     <h2 style="margin:0; font-size:3em; color:#333;">EXPLORE MANDAR</h2>
     <img src="/public/th.jpg" alt="Logo Explore Mandar" style="display:block; margin:1em auto; max-width:80%; height:auto;" />
     <h2 style="margin:0; font-size:2em; color:#333;">RAHMADI</h2>
