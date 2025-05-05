@@ -2,7 +2,6 @@
 <html lang="id">
 <head>
   <style>
-    /* Tabel umum */
     table { width: 100%; border-collapse: collapse; margin-bottom: 1.5em; }
     th, td { border: 1px solid #aaa; padding: 0.5em; text-align: left; }
     th { background: #f0f0f0; }
