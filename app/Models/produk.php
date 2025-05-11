@@ -11,9 +11,13 @@ class produk extends Model
     public function kategori(){
         return $this->belongsTo(kategori::class, 'kategori_id');
     }
-    public function pesanan(){
-        return $this->hasMany(pesanan::class,);
+    public function pesanan()
+    {
+        return $this->belongsToMany(pesanan::class, 'detailpesanan')
+                    ->withPivot('jumlah', 'total_harga')
+                    ->withTimestamps();
     }
+    
     public function ulasan(){
         return $this->hasMany(ulasan::class);
     }
@@ -23,7 +27,7 @@ class produk extends Model
     public function detailpesanan(){
         return $this->hasMany(detailpesanan::class);
     }
-      public function pengguna()
+      public function user()
     {
         return $this->belongsTo(pengguna::class, 'pengguna_id');
     }

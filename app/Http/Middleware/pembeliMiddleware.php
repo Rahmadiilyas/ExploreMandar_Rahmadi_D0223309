@@ -19,7 +19,7 @@ class pembeliMiddleware
         if (Auth::check() && Auth::user()->role === 'pembeli') {
             return $next($request); // lanjutkan request
         }
-
+        abort(403, 'Akses hanya untuk pembeli.');
         // Jika bukan user dengan role 'pembeli', redirect ke halaman login
         return redirect('/login');
     }

@@ -14,7 +14,7 @@
 
           <!-- Featured Post (Large) -->
           <article class="blog-item featured" data-aos="fade-up">
-            <img src="{{ asset('assets/img/favicon.png') }}" alt="Blog Image" class="img-fluid">
+            <img src="{{ asset('assets/img/dato.jpg') }}" alt="Blog Image" class="img-fluid">
             <div class="blog-content">
               <div class="post-meta">
                 <span class="date">Apr. 14th, 2025</span>
@@ -28,7 +28,7 @@
 
           <!-- Regular Posts -->
           <article class="blog-item" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/blog/blog-post-portrait-1.webp" alt="Blog Image" class="img-fluid">
+            <img src="{{ asset('assets/img/sayyang-pattudu.jpg') }}" alt="Blog Image" class="img-fluid">
             <div class="blog-content">
               <div class="post-meta">
                 <span class="date">Apr. 14th, 2025</span>
@@ -41,7 +41,7 @@
           </article><!-- End Blog Item -->
 
           <article class="blog-item" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/blog/blog-post-9.webp" alt="Blog Image" class="img-fluid">
+            <img src="{{ asset('assets/img/th.jpg') }}" alt="Blog Image" class="img-fluid">
             <div class="blog-content">
               <div class="post-meta">
                 <span class="date">Apr. 14th, 2025</span>

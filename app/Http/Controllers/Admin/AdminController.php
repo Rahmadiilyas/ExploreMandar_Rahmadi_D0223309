@@ -11,6 +11,7 @@ use App\Models\produk;
 use App\Models\ulasan;
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class AdminController extends Controller
 {
@@ -25,8 +26,16 @@ class AdminController extends Controller
         return view('admin.lihatuser', compact('user'));
     }
     public function simpanuser(Request $request){
-        pengguna::create($request->only(['name','email','password','role','alamat','nomor_telepon']));
-        return redirect()->route('admin.lihatuser');
+        pengguna::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password), // bcrypt
+            'role' => $request->role,
+            'alamat' => $request->alamat,
+            'nomor_telepon' => $request->nomor_telepon,
+        ]);
+
+        return redirect()->route('admin.lihatuser')->with('success', 'User berhasil ditambahkan.');;
     }
     public function edituser($id){
         $user = pengguna::find($id);

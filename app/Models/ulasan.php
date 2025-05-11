@@ -10,9 +10,9 @@ class ulasan extends Model
     protected $guarded = [];
 
     public function produk(){
-        return $this->belongsTo(produk::class);
+        return $this->belongsTo(produk::class, 'produk_id');
     }
     public function user(){
-        return $this->belongsTo(pengguna::class);
+        return $this->belongsTo(pengguna::class, 'user_id');
     }
 }

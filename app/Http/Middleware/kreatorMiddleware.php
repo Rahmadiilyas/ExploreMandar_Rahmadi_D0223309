@@ -19,7 +19,7 @@ class kreatorMiddleware
         if (Auth::check() && Auth::user()->role === 'kreator') {
             return $next($request); // lanjutkan request
         }
-
+        abort(403, 'Akses hanya untuk kreator.');
         // Jika bukan user dengan role 'pembeli', redirect ke halaman login
         return redirect('/login');
     }

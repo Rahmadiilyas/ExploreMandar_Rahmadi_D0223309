@@ -51,11 +51,12 @@ return new class extends Migration
         Schema::create('pesanan', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
-            $table->foreignId('produk_id')->constrained('produk')->cascadeOnDelete();
-            $table->integer('jumlah');
+         
+           
             $table->integer('total_harga');
             $table->string('status'); // misalnya: 'menunggu', 'diproses', 'selesai'
             $table->string('status_pembayaran')->default('belum dibayar'); // 'belum dibayar', 'sudah dibayar'
+            $table->string('status_konfirmasi')->nullable();
             $table->timestamps();
         });
 
@@ -69,7 +70,7 @@ return new class extends Migration
             $table->string('alamat_pengiriman');
             $table->string('nomor_telepon');
             $table->string('catatan')->nullable(); // opsional, misal: pesan tambahan dari pembeli
-        
+            $table->enum('metode_pembayaran', ['cod', 'transfer'])->default('cod');
             // Bukti pembayaran manual (upload gambar atau foto)
             $table->string('bukti_pembayaran')->nullable();
         
@@ -95,6 +96,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('produk_id')->constrained('produk')->cascadeOnDelete();
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
+            $table->foreignId('detail_pesanan_id')->constrained('detail_pesanan')->cascadeOnDelete();  // Relasi dengan detail pesanan
             $table->text('isi');
             $table->tinyInteger('rating'); // skala 1-5
             $table->boolean('verifikasi')->default(false); // untuk menandakan apakah ulasan sudah diverifikasi
@@ -111,14 +113,6 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        // Tabel galeri untuk gambar wisata
-        Schema::create('galeri', function (Blueprint $table) {
-            $table->id();
-            $table->string('judul');
-            $table->string('path_gambar');
-            $table->foreignId('wisata_id')->nullable()->constrained('wisata')->cascadeOnDelete();
-            $table->timestamps();
-        });
 
         // Tabel keranjang untuk menyimpan produk yang ditambahkan oleh pengguna ke keranjang
         Schema::create('keranjang', function (Blueprint $table) {
@@ -139,7 +133,7 @@ return new class extends Migration
     {
 
         Schema::dropIfExists('keranjang');
-        Schema::dropIfExists('galeri');
+      
         Schema::dropIfExists('wisata');
         Schema::dropIfExists('ulasan');
         Schema::dropIfExists('detail_pesanan');

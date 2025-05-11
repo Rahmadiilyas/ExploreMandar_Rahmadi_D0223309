@@ -9,10 +9,10 @@
     {{-- Desktop Nav --}}
     <nav class="d-none d-xl-flex align-items-center">
       <ul class="nav">
-        <li class="nav-item"><a class="nav-link" href="{{ route('pembeli.beranda') }}">Beranda</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ route('pembeli.about') }}">Tentang Kami</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ route('pembeli.produk') }}">Produk</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ route('pembeli.wisata') }}">Wisata</a></li>
+        <li class="nav-item"><a class="nav-link active" href="{{ route('tamu.beranda') }}">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('tamu.about') }}">Tentang Kami</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{  route('tamu.produk') }}">Produk</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('tamu.wisata') }}">Wisata</a></li>
       </ul>
     </nav>
 
@@ -24,41 +24,26 @@
         <button class="btn btn-sm btn-outline-secondary" type="submit"><i class="bi bi-search"></i></button>
       </form>
 
-{{-- Social icons --}}
-<div class="d-none d-lg-flex align-items-center me-4">
-
-
-  {{-- Ikon Keranjang --}}
-  <a href="{{ route('pembeli.keranjang') }}" class="text-muted me-3"><i class="bi bi-cart3"></i></a>
-
-  {{-- Ikon Detail Pesanan --}}
-  <a href="{{ route('pembeli.detailpesanan') }}" class="text-muted"><i class="bi bi-receipt-cutoff"></i></a>
-</div>
+      {{-- Social icons --}}
+      <div class="d-none d-lg-flex align-items-center me-4">
+        <a href="#" class="text-muted me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-muted me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-muted"><i class="bi bi-instagram"></i></a>
+      </div>
 
       {{-- Auth links --}}
       <ul class="nav">
         @if (Route::has('login'))
           @auth
-          @if (Auth::check())
-          <div class="dropdown me-3">
-            <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle p-2 bg-light border rounded shadow-sm" id="profilDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="text-decoration: none;">
-              <img src="{{ asset('assets/img/fardina.jpg') }}" alt="Profile" width="32" height="32" class="rounded-circle me-2">
-              <strong class="text-dark">{{ Auth::user()->name }}</strong>
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end shadow-sm mt-2" aria-labelledby="profilDropdown">
-              <li><a class="dropdown-item" href="{{ route('pembeli.profil') }}"><i class="bi bi-person me-2"></i>Profil Saya</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li>
-                <form action="{{ route('logout') }}" method="POST" class="d-inline">
-                  @csrf
-                  <button type="submit" class="dropdown-item text-danger"><i class="bi bi-box-arrow-right me-2"></i>Logout</button>
-                </form>
-              </li>
-            </ul>
-          </div>
-        @endif
-        
-
+            <!-- Tombol Logout -->
+            <li class="nav-item">
+              <form action="{{ route('logout') }}" method="POST" class="d-inline-block">
+                @csrf
+                <button type="submit" class="btn btn-sm btn-danger">
+                  <i class="bi bi-box-arrow-right me-1"></i> Logout
+                </button>
+              </form>
+            </li>
           @else
             <li class="nav-item me-2">
               <a class="btn btn-sm btn-outline-primary" href="{{ route('login') }}">
@@ -92,10 +77,10 @@
     </div>
     <div class="offcanvas-body">
       <ul class="nav flex-column mb-4">
-        <li class="nav-item"><a class="nav-link" href="{{ route('pembeli.beranda') }}">Beranda</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ route('pembeli.about') }}">Tentang Kami</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ route('pembeli.produk') }}">Produk</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ route('pembeli.wisata') }}">Wisata</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Tentang Kami</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{  url('/')}}">Produk</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Wisata</a></li>
       </ul>
       
       {{-- Search Form in Mobile Menu --}}
@@ -129,10 +114,10 @@
 </header>
 
 {{-- Konten utama --}}
-<main class="container pt-5 mt-5">  <!-- Menambahkan margin-top menggunakan Bootstrap -->
+<main class="container pt-6 mt-5">  <!-- Menambahkan margin-top menggunakan Bootstrap -->
   <div class="row">
     <div class="col">
-  
+    mkmk
     </div>
   </div>
 </main>

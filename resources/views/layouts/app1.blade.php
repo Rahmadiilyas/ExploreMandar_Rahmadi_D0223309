@@ -71,7 +71,7 @@
             </a>
             <hr class="sidebar-divider my-0">
             <li class="nav-item active">
-                <a class="nav-link" href="{{ url('/') }}">
+                <a class="nav-link" href="{{ route('kreator.dashboard')}}">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span>
                 </a>
@@ -82,13 +82,13 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#userMenu" aria-expanded="true" aria-controls="userMenu">
                     <i class="fas fa-fw fa-user"></i>
-                    <span>User</span>
+                    <span>Kategori</span>
                 </a>
                 <div id="userMenu" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Akses:</h6>
-                        <a class="collapse-item" href="{{ route('admin.tambahuser') }}">Tambah User</a>
-                        <a class="collapse-item" href="{{ route('admin.lihatuser') }}">Lihat User</a>
+                        <a class="collapse-item" href="{{ route('kreator.tambahkategori') }}">Tambah Kategori</a>
+                        <a class="collapse-item" href="{{ route('kreator.lihatkategori') }}">Lihat Kategori</a>
                     </div>
                 </div>
             </li>
@@ -96,12 +96,13 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#kategoriMenu" aria-expanded="true" aria-controls="kategoriMenu">
                     <i class="fas fa-fw fa-tags"></i>
-                    <span>Kategori</span>
+                    <span>Produk</span>
                 </a>
                 <div id="kategoriMenu" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Akses:</h6>
-                        <a class="collapse-item" href="{{ route('admin.lihatkategori') }}">Lihat Kategori</a>
+                        <a class="collapse-item" href="{{ route('kreator.tambahproduk') }}">Tambah Produk</a>
+                        <a class="collapse-item" href="{{ route('kreator.lihatproduk') }}">Lihat Produk</a>
                     </div>
                 </div>
             </li>
@@ -109,12 +110,12 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#produkMenu" aria-expanded="true" aria-controls="produkMenu">
                     <i class="fas fa-fw fa-box-open"></i>
-                    <span>Produk</span>
+                    <span>Pesanan</span>
                 </a>
                 <div id="produkMenu" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Akses:</h6>
-                        <a class="collapse-item" href="{{ route('admin.lihatproduk') }}">Lihat Produk</a>
+                        <a class="collapse-item" href="{{ route('kreator.lihatpesanan') }}">Lihat Pesanan</a>
                     </div>
                 </div>
             </li>
@@ -122,12 +123,13 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pesananMenu" aria-expanded="true" aria-controls="pesananMenu">
                     <i class="fas fa-fw fa-shopping-cart"></i>
-                    <span>Pesanan</span>
+                    <span>Wisata</span>
                 </a>
                 <div id="pesananMenu" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Akses:</h6>
-                        <a class="collapse-item" href="{{ route('admin.lihatpesanan') }}">Lihat Pesanan</a>
+                        <a class="collapse-item" href="{{ route('kreator.tambahwisata') }}">Tambah Wisata</a>
+                        <a class="collapse-item" href="{{ route('kreator.lihatwisata') }}">Lihat Wisatak</a>
                     </div>
                 </div>
             </li>
@@ -135,12 +137,12 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#pembayaranMenu" aria-expanded="true" aria-controls="pembayaranMenu">
                     <i class="fas fa-fw fa-money-check-alt"></i>
-                    <span>Pembayaran</span>
+                    <span>Validasi Pembayaran</span>
                 </a>
                 <div id="pembayaranMenu" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Akses:</h6>
-                        <a class="collapse-item" href="{{ route('admin.lihatlaporan') }}">Lihat Pembayaran</a>
+                        <a class="collapse-item" href="{{ route('kreator.validasi.index') }}">Validasi Pembayaran</a>
                     </div>
                 </div>
             </li>
@@ -154,7 +156,7 @@
                 <div id="ulasanMenu" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Akses:</h6>
-                        <a class="collapse-item" href="{{ route('admin.lihatulasan') }}">Lihat Ulasan</a>
+                        <a class="collapse-item" href="{{ route('kreator.lihatulasan') }}">Lihat Ulasan</a>
                     </div>
                 </div>
             </li>

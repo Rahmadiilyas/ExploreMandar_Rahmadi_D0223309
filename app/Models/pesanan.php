@@ -8,15 +8,17 @@ class pesanan extends Model
 {
     protected $table = 'pesanan';
     protected $guarded = [];
-    public function users(){
+    public function user(){
         return $this->belongsTo(pengguna::class, 'user_id');
     }
-    public function produk(){
-        return $this->belongsTo(produk::class);
+    // public function produk(){
+    //     return $this->belongsTo(produk::class);
+    // }
+    public function detailPesanan()
+    {
+        return $this->hasMany(detailPesanan::class, 'pesanan_id'); 
     }
-    public function detailpesanan(){
-        return $this->hasMany(detailpesanan::class, 'pesanan_id');
-    }
+    
     public function pembayaran(){
         return $this->hasOne(pembayaran::class);
     }

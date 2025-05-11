@@ -1,4 +1,4 @@
-@extends('master')
+@extends('master2')
 
 @section('konten')
 <body class="blog-details-page">

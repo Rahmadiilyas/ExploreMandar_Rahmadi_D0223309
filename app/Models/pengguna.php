@@ -22,5 +22,25 @@ class pengguna extends Model
     public function keranjang(){
         return $this->hasMany(keranjang::class);
     }
+    public function isKreator()
+    {
+        return $this->role === 'kreator';
+    }
+
+    /**
+     * Menentukan apakah pengguna ini adalah admin
+     */
+    public function isAdmin()
+    {
+        return $this->role === 'admin';
+    }
+
+    /**
+     * Menentukan apakah pengguna ini adalah pembeli
+     */
+    public function isPembeli()
+    {
+        return $this->role === 'pembeli';
+    }
 
 }

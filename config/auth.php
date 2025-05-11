@@ -40,8 +40,18 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
+    
+    'kreator' => [
+        'driver' => 'session',
+        'provider' => 'users',
     ],
-
+],
+'providers' => [
+    'users' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\pengguna::class,
+    ],
+],
     /*
     |--------------------------------------------------------------------------
     | User Providers

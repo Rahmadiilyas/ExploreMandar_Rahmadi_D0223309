@@ -36,7 +36,7 @@
 </head>
 
 <body>
-    @include('layouts.header')
+    @include('layouts.header1')
     @yield('konten')
     @include('layouts.footer')
 
