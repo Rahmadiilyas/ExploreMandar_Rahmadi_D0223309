@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\detailPesanan;
 use App\Models\kategori;
 use App\Models\pembayaran;
 use App\Models\pengguna;
@@ -10,6 +11,7 @@ use App\Models\pesanan;
 use App\Models\produk;
 use App\Models\ulasan;
 use App\Models\User;
+use App\Models\wisata;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 
@@ -26,6 +28,15 @@ class AdminController extends Controller
         return view('admin.lihatuser', compact('user'));
     }
     public function simpanuser(Request $request){
+
+         $request->validate([
+        'name' => 'required|string|max:255',
+        'email' => 'required|string|email',
+        'password' => 'required|min:6',
+        'role' => 'required|string',
+        'alamat' => 'required|string|max:255',
+        'nomor_telepon' => 'required|digits_between:10,15',
+    ]);
         pengguna::create([
             'name' => $request->name,
             'email' => $request->email,
@@ -34,6 +45,7 @@ class AdminController extends Controller
             'alamat' => $request->alamat,
             'nomor_telepon' => $request->nomor_telepon,
         ]);
+
 
         return redirect()->route('admin.lihatuser')->with('success', 'User berhasil ditambahkan.');;
     }
@@ -60,14 +72,15 @@ class AdminController extends Controller
 
     //produk
   
-    public function lihatproduk(){
-        $produk = produk::with('kategori')->get();
+    public function lihatproduk()
+    {
+        $produk = produk::with('user', 'kategori')->get();
         return view('admin.lihatproduk', compact('produk'));
     }
 
     //pesanan
     public function lihatpesanan(){
-        $pesanan = pesanan::with('users','produk', 'detailpesanan')->get();
+        $pesanan = detailPesanan::with('pesanan.user')->get();
         return view('admin.lihatpesanan', compact('pesanan'));
     }
  
@@ -87,6 +100,9 @@ public function lihatUlasan()
 }
 
 
-
+    public function lihatwisata(){
+        $wisata = wisata::all();
+        return view('admin.lihatwisata', compact('wisata'));
+    }
 
 }

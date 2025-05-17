@@ -1,15 +1,8 @@
 @extends('master1')
 
 @section('konten')
-<body class="category-page">
+
   <main class="main">
-
-
-        <div class="title-wrapper text-center">
-          <h1>Wisata</h1>
-          
-        </div>
-
 
     <div class="container my-5">
       <div class="row">
@@ -115,5 +108,5 @@
     </div>
 
   </main>
-</body>
+
 @endsection

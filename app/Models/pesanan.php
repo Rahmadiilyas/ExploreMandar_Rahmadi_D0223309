@@ -22,5 +22,6 @@ class pesanan extends Model
     public function pembayaran(){
         return $this->hasOne(pembayaran::class);
     }
+    
 
 }

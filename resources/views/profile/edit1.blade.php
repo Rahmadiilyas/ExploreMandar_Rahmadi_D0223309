@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('master1')
 
 @section('konten')
 
@@ -14,7 +14,7 @@
     <!-- Profile Edit Form -->
     <div class="card shadow-lg">
         <div class="card-body">
-            <form method="POST" action="{{ route('profile.update') }}">
+            <form method="POST" action="{{ route('profile.update1') }}">
                 @csrf
                 @method('PATCH') <!-- Add the method spoofing here -->
                 

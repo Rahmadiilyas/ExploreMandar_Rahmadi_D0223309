@@ -23,7 +23,7 @@
                       <th>User_id</th>
                       <th>Isi</th>
                       <th>Rating</th>
-                      <th>verifikasi</th>
+                      {{-- <th>verifikasi</th> --}}
           
                       
 
@@ -38,7 +38,7 @@
                         <td>{{ $ul->user_id }} - {{ $ul->user->name ?? 'user tidak ditemukan' }}</td>
                         <td>{{ $ul->isi }}</td>
                         <td>{{ $ul->rating }}</td>
-                        <td>{{ $ul->verifikasi }}</td>
+                        {{-- <td>{{ $ul->verifikasi }}</td> --}}
                     </tr>
                 @endforeach
                     

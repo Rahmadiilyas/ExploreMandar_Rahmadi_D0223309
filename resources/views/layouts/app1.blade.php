@@ -129,7 +129,7 @@
                     <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">Akses:</h6>
                         <a class="collapse-item" href="{{ route('kreator.tambahwisata') }}">Tambah Wisata</a>
-                        <a class="collapse-item" href="{{ route('kreator.lihatwisata') }}">Lihat Wisatak</a>
+                        <a class="collapse-item" href="{{ route('kreator.lihatwisata') }}">Lihat Wisata</a>
                     </div>
                 </div>
             </li>
@@ -202,7 +202,7 @@
                                 <img class="img-profile rounded-circle" src="{{ asset('sb-admin/sb-admin/img/undraw_profile.svg') }}">
                             </a>
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>Profile</a>
+                                <a class="dropdown-item" href={{ route('profile.edit') }}><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>Profile Update</a>
                                 <a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>Settings</a>
                                 <a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>Activity Log</a>
                                 <div class="dropdown-divider"></div>

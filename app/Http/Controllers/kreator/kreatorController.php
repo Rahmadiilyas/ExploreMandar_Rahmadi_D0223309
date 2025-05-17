@@ -220,4 +220,8 @@ public function tolakPembayaran($id)
 
     return redirect()->back()->with('success', 'Pembayaran ditolak dan pesanan dibatalkan.');
 }
+    public function lihatpesanan(){
+        $pesanan = detailpesanan::with('pesanan.user','pesanan.pembayaran')->get();
+        return view('kreator.lihatpesanan', compact('pesanan'));
+    }
 }

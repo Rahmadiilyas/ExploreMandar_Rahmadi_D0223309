@@ -15,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::controller(Tamucontroller::class)->group(function(){
     Route::get('/', 'beranda')->name('tamu.beranda');
-    Route::get('/about1', 'about')->name('tamu.about');
+    Route::get('/about1', 'about');
     Route::get('/produk1', 'produk')->name('tamu.produk');
-    Route::get('/wisataa1', 'wisata')->name('tamu.wisata');
+    Route::get('/wisataa1', 'index')->name('tamu.wisata');
 });
 
 Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
@@ -29,8 +29,10 @@ Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::get('/profile1', [ProfileController::class, 'edit1'])->name('profile.edit1');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::patch('/profile1', [ProfileController::class, 'update1'])->name('profile.update1');
+    Route::post('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
 require __DIR__.'/auth.php';
@@ -42,8 +44,6 @@ Route::middleware(['auth', 'pembeliMiddleware'])->group(function () {
     Route::get('/pembeli/beranda', [userController::class, 'beranda'])->name('pembeli.beranda');
     // Halaman dashboard dan home
     Route::get('/pembeli/produk', [userController::class, 'produk'])->name('pembeli.produk');
-   
-
     // Keranjang
     Route::get('/pembeli/keranjang', [userController::class, 'index1'])->name('pembeli.keranjang');
     Route::get('/pembeli/about', [userController::class, 'about'])->name('pembeli.about');
@@ -92,6 +92,7 @@ Route::middleware(['auth', 'adminMiddleware'])->group(function(){
     Route::get('/lihatpesanan', [AdminController::class, 'lihatpesanan'])->name('admin.lihatpesanan');
     Route::get('/lihatlaporan', [AdminController::class, 'lihatlaporan'])->name('admin.lihatlaporan');
     Route::get('/lihatulasan', [AdminController::class, 'lihatulasan'])->name('admin.lihatulasan');
+    Route::get('/lihatwisata', [AdminController::class, 'lihatwisata'])->name('admin.lihatwisata');
 
    
 
@@ -119,10 +120,12 @@ Route::middleware(['auth', 'kreatorMiddleware'])->group(function(){
     Route::post('/kreator/updatewisata/{id}', [kreatorController::class, 'updatewisata'])->name('kreator.updatewisata');
     Route::post('/kreator/deletewisata/{id}', [kreatorController::class, 'deletewisata'])->name('kreator.deletewisata');
     Route::get('/kreator/lihatulasan', [kreatorController::class, 'lihatulasan'])->name('kreator.lihatulasan');
-    Route::get('/kreator/lihatpesanan', [kreatorController::class, 'pesananMasuk'])->name('kreator.lihatpesanan');
+    Route::get('/kreator/lihatpesanan', [kreatorController::class, 'lihatpesanan'])->name('kreator.lihatpesanan');
 
     Route::get('/validasi-pembayaran', [kreatorController::class, 'daftarPembayaran'])->name('kreator.validasi.index');
     Route::post('/validasi-pembayaran/{id}', [kreatorController::class, 'validasiPembayaran'])->name('kreator.validasi.proses');
     Route::post('/validasi-pembayaran/{id}/tolak', [kreatorController::class, 'tolakPembayaran'])->name('kreator.validasi.tolak');
 });
+
+
 

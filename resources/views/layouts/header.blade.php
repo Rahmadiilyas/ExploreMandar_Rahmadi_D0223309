@@ -42,7 +42,7 @@
           @if (Auth::check())
           <div class="dropdown me-3">
             <a href="#" class="d-flex align-items-center text-decoration-none dropdown-toggle p-2 bg-light border rounded shadow-sm" id="profilDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="text-decoration: none;">
-              <img src="{{ asset('assets/img/fardina.jpg') }}" alt="Profile" width="32" height="32" class="rounded-circle me-2">
+              <img src="{{ asset('assets/img/ft.jpg') }}" alt="Profile" width="32" height="32" class="rounded-circle me-2">
               <strong class="text-dark">{{ Auth::user()->name }}</strong>
             </a>
             <ul class="dropdown-menu dropdown-menu-end shadow-sm mt-2" aria-labelledby="profilDropdown">

@@ -6,7 +6,7 @@
 <div class="content-wrapper">
 
   <div class="col-xl-6 grid-margin stretch-card flex-column">
-            <h5 class="mb-2 text-titlecase mb-4">Tabel Kategori</h5>
+            <h5 class="mb-2 text-titlecase mb-4">Tabel Produk</h5>
           
           
         </div>

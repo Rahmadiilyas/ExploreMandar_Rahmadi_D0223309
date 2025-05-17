@@ -5,20 +5,7 @@
 
     <!-- Page Title -->
     <div class="page-title">
-      <div class="breadcrumbs">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i> Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Informasi</a></li>
-            <li class="breadcrumb-item active current">Tentang</li>
-          </ol>
-        </nav>
-      </div>
-
-      <div class="title-wrapper">
-        <p>Temukan pesona kuliner dan wisata khas Mandar yang kaya rasa dan budaya. Platform ini hadir untuk memperkenalkan keindahan dan cita rasa lokal kepada dunia.</p>
-      </div>
-    </div><!-- End Page Title -->
+      </div><!-- End Page Title -->
 
     <!-- About Section -->
     <section id="about" class="about section">

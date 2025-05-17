@@ -10,7 +10,7 @@
     <nav class="d-none d-xl-flex align-items-center">
       <ul class="nav">
         <li class="nav-item"><a class="nav-link active" href="{{ route('tamu.beranda') }}">Beranda</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ route('tamu.about') }}">Tentang Kami</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url('/about1') }}">Tentang Kami</a></li>
         <li class="nav-item"><a class="nav-link" href="{{  route('tamu.produk') }}">Produk</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ route('tamu.wisata') }}">Wisata</a></li>
       </ul>
@@ -25,11 +25,15 @@
       </form>
 
       {{-- Social icons --}}
-      <div class="d-none d-lg-flex align-items-center me-4">
-        <a href="#" class="text-muted me-3"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="text-muted me-3"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="text-muted"><i class="bi bi-instagram"></i></a>
-      </div>
+<div class="d-none d-lg-flex align-items-center me-4">
+
+
+  {{-- Ikon Keranjang --}}
+  <a href="{{ route('pembeli.keranjang') }}" class="text-muted me-3"><i class="bi bi-cart3"></i></a>
+
+  {{-- Ikon Detail Pesanan --}}
+  <a href="{{ route('pembeli.detailpesanan') }}" class="text-muted"><i class="bi bi-receipt-cutoff"></i></a>
+</div>
 
       {{-- Auth links --}}
       <ul class="nav">
@@ -77,10 +81,10 @@
     </div>
     <div class="offcanvas-body">
       <ul class="nav flex-column mb-4">
-        <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Beranda</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Tentang Kami</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{  url('/')}}">Produk</a></li>
-        <li class="nav-item"><a class="nav-link" href="{{ url('/') }}">Wisata</a></li>
+   <li class="nav-item"><a class="nav-link active" href="{{ route('tamu.beranda') }}">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ url('about1') }}">Tentang Kami</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{  route('tamu.produk') }}">Produk</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ route('tamu.wisata') }}">Wisata</a></li>
       </ul>
       
       {{-- Search Form in Mobile Menu --}}
@@ -114,10 +118,10 @@
 </header>
 
 {{-- Konten utama --}}
-<main class="container pt-6 mt-5">  <!-- Menambahkan margin-top menggunakan Bootstrap -->
+<main class="container pt-5 mt-5">  <!-- Menambahkan margin-top menggunakan Bootstrap -->
   <div class="row">
     <div class="col">
-    mkmk
+
     </div>
   </div>
 </main>

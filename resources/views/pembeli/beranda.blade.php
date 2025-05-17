@@ -1,647 +1,210 @@
+
 @extends('master1')
 @section('konten')
-    
 <body class="index-page">
 
   <main class="main">
 
     <!-- Blog Hero Section -->
     <section id="blog-hero" class="blog-hero section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="blog-grid">
 
-          <!-- Featured Post (Large) -->
+          <!-- Featured Cultural Post -->
           <article class="blog-item featured" data-aos="fade-up">
-            <img src="{{ asset('assets/img/dato.jpg') }}" alt="Blog Image" class="img-fluid">
+            <img src="{{ asset('sy.jpg') }}" alt="Pesta Rokatua" class="img-fluid">
             <div class="blog-content">
               <div class="post-meta">
-                <span class="date">Apr. 14th, 2025</span>
-                <span class="category">Technology</span>
+                <span class="date">Mei 10, 2025</span>
+                <span class="category">Tradisi</span>
               </div>
               <h2 class="post-title">
-                <a href="blog-details.html" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                <a href="#" title="Pesta Rokatua: Warisan Budaya Mandar">Sayyang pattudu: Warisan Budaya Mandar</a>
               </h2>
             </div>
-          </article><!-- End Featured Post -->
+          </article>
 
-          <!-- Regular Posts -->
+          <!-- Regular Culture Posts -->
           <article class="blog-item" data-aos="fade-up" data-aos-delay="100">
-            <img src="{{ asset('assets/img/sayyang-pattudu.jpg') }}" alt="Blog Image" class="img-fluid">
+            <img src="{{ asset('tr.jpg') }}" alt="Tari Gandrung Mandar" class="img-fluid">
             <div class="blog-content">
               <div class="post-meta">
-                <span class="date">Apr. 14th, 2025</span>
-                <span class="category">Security</span>
+                <span class="date">April 20, 2025</span>
+                <span class="category">Seni</span>
               </div>
               <h3 class="post-title">
-                <a href="blog-details.html" title="Sed do eiusmod tempor incididunt ut labore">Sed do eiusmod tempor incididunt ut labore</a>
+                <a href="#" title="Tari Gandrung Mandar: Keindahan Gerak">Tari Gandrung Mandar: Keindahan Gerak</a>
               </h3>
             </div>
-          </article><!-- End Blog Item -->
+          </article>
 
           <article class="blog-item" data-aos="fade-up" data-aos-delay="200">
-            <img src="{{ asset('assets/img/th.jpg') }}" alt="Blog Image" class="img-fluid">
+            <img src="{{ asset('th (2).jpg') }}" alt="Kuliner Lakat" class="img-fluid">
             <div class="blog-content">
               <div class="post-meta">
-                <span class="date">Apr. 14th, 2025</span>
-                <span class="category">Career</span>
+                <span class="date">April 25, 2025</span>
+                <span class="category">Kuliner</span>
               </div>
               <h3 class="post-title">
-                <a href="blog-details.html" title="Ut enim ad minim veniam, quis nostrud exercitation">Ut enim ad minim veniam, quis nostrud exercitation</a>
+                <a href="{{ route('pembeli.produk') }}" title="Mengenal Lakat: Makanan Khas Mandar">Mengenal Bau piapi: Makanan Khas Mandar</a>
               </h3>
             </div>
-          </article><!-- End Blog Item -->
-
-          <article class="blog-item" data-aos="fade-up" data-aos-delay="300">
-            <img src="assets/img/blog/blog-post-7.webp" alt="Blog Image" class="img-fluid">
+          </article>
+          <article class="blog-item" data-aos="fade-up" data-aos-delay="200">
+            <img src="{{ asset('th (1).jpg') }}" alt="Kuliner Lakat" class="img-fluid">
             <div class="blog-content">
               <div class="post-meta">
-                <span class="date">Apr. 14th, 2025</span>
-                <span class="category">Cloud</span>
+                <span class="date">April 25, 2025</span>
+                <span class="category">Kuliner</span>
               </div>
               <h3 class="post-title">
-                <a href="blog-details.html" title="Adipiscing elit, sed do eiusmod tempor incididunt">Adipiscing elit, sed do eiusmod tempor incididunt</a>
+                <a href="{{ route('pembeli.produk') }}" title="Mengenal Lakat: Makanan Khas Mandar">Mengenal Bolu Paranggi: Makanan Khas Mandar</a>
               </h3>
             </div>
-          </article><!-- End Blog Item -->
-
-          <article class="blog-item" data-aos="fade-up" data-aos-delay="400">
-            <img src="assets/img/blog/blog-post-6.webp" alt="Blog Image" class="img-fluid">
+          </article>
+          <article class="blog-item" data-aos="fade-up" data-aos-delay="200">
+            <img src="{{ asset('OIP.jpg') }}" alt="Kuliner Lakat" class="img-fluid">
             <div class="blog-content">
               <div class="post-meta">
-                <span class="date">Apr. 14th, 2025</span>
-                <span class="category">Programming</span>
+                <span class="date">April 25, 2025</span>
+                <span class="category">Kuliner</span>
               </div>
               <h3 class="post-title">
-                <a href="blog-details.html" title="Excepteur sint occaecat cupidatat non proident">Excepteur sint occaecat cupidatat non proident</a>
+                <a href="{{ route('pembeli.produk') }}" title="Mengenal Lakat: Makanan Khas Mandar">Mengenal Tetu: Makanan Khas Mandar</a>
               </h3>
             </div>
-          </article><!-- End Blog Item -->
+          </article>
 
         </div>
-
       </div>
-
-    </section><!-- /Blog Hero Section -->
+    </section>
 
     <!-- Featured Posts Section -->
     <section id="featured-posts" class="featured-posts section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Featured Posts</h2>
-        <div><span>Check Our</span> <span class="description-title">Featured Posts</span></div>
-      </div><!-- End Section Title -->
+        <h2>Artikel Unggulan</h2>
+        <div><span>Jelajahi</span> <span class="description-title">Budaya Mandar</span></div>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="blog-posts-slider swiper init-swiper">
           <script type="application/json" class="swiper-config">
-            {
-              "loop": true,
-              "speed": 800,
-              "autoplay": {
-                "delay": 5000
-              },
-              "slidesPerView": 3,
-              "spaceBetween": 30,
-              "breakpoints": {
-                "320": {
-                  "slidesPerView": 1,
-                  "spaceBetween": 20
-                },
-                "768": {
-                  "slidesPerView": 2,
-                  "spaceBetween": 20
-                },
-                "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 30
-                }
-              }
-            }
+            { "loop": true, "speed": 800, "autoplay": { "delay": 5000 }, "slidesPerView": 3, "spaceBetween": 30, "breakpoints": { "320": { "slidesPerView": 1, "spaceBetween": 20 }, "768": { "slidesPerView": 2, "spaceBetween": 20 }, "1200": { "slidesPerView": 3, "spaceBetween": 30 } } }
           </script>
 
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="blog-post-item">
-                <img src="assets/img/blog/blog-post-portrait-1.webp" alt="Blog Image">
+                <img src="{{ asset('by.jpg') }}" alt="Rumah Adat Balla" class="img-fluid">
                 <div class="blog-post-content">
                   <div class="post-meta">
-                    <span><i class="bi bi-person"></i> Julia Parker</span>
-                    <span><i class="bi bi-clock"></i> Jan 15, 2025</span>
-                    <span><i class="bi bi-chat-dots"></i> 6 Comments</span>
+                    <span><i class="bi bi-person"></i> Tim Mandar</span>
+                    <span><i class="bi bi-clock"></i> Feb 5, 2025</span>
+                    <span><i class="bi bi-chat-dots"></i> 12 Komentar</span>
                   </div>
-                  <h2><a href="#">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet</a></h2>
-                  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce porttitor metus eget lectus consequat, sit amet feugiat magna vulputate.</p>
-                  <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+                  <h2><a href="{{ route('pembeli.wisata') }}">Boyyang kayyang: Simbol Keharmonisan Keluarga Mandar</a></h2>
+                  <p>Pelajari struktur unik dan makna filosofis di balik arsitektur tradisional Mandar.</p>
+                  <a href="{{ route('pembeli.wisata') }}" class="read-more">Baca Selengkapnya <i class="bi bi-arrow-right"></i></a>
                 </div>
               </div>
-            </div><!-- End slide item -->
-
-            <div class="swiper-slide">
-              <div class="blog-post-item">
-                <img src="assets/img/blog/blog-post-portrait-2.webp" alt="Blog Image">
-                <div class="blog-post-content">
-                  <div class="post-meta">
-                    <span><i class="bi bi-person"></i> Mark Wilson</span>
-                    <span><i class="bi bi-clock"></i> Jan 18, 2025</span>
-                    <span><i class="bi bi-chat-dots"></i> 6 Comments</span>
-                  </div>
-                  <h2><a href="#">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a></h2>
-                  <p>Maecenas tempus tellus eget condimentum rhoncus sem quam semper libero sit amet adipiscing sem neque sed ipsum.</p>
-                  <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-            </div><!-- End slide item -->
-
-            <div class="swiper-slide">
-              <div class="blog-post-item">
-                <img src="assets/img/blog/blog-post-portrait-3.webp" alt="Blog Image">
-                <div class="blog-post-content">
-                  <div class="post-meta">
-                    <span><i class="bi bi-person"></i> Sarah Johnson</span>
-                    <span><i class="bi bi-clock"></i> Jan 21, 2025</span>
-                    <span><i class="bi bi-chat-dots"></i> 15 Comments</span>
-                  </div>
-                  <h2><a href="#">At vero eos et accusamus et iusto odio dignissimos ducimus</a></h2>
-                  <p>Nullam dictum felis eu pede mollis pretium integer tincidunt cras dapibus vivamus elementum semper nisi.</p>
-                  <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-            </div><!-- End slide item -->
-
-            <div class="swiper-slide">
-              <div class="blog-post-item">
-                <img src="assets/img/blog/blog-post-portrait-4.webp" alt="Blog Image">
-                <div class="blog-post-content">
-                  <div class="post-meta">
-                    <span><i class="bi bi-person"></i> David Brown</span>
-                    <span><i class="bi bi-clock"></i> Jan 24, 2025</span>
-                    <span><i class="bi bi-chat-dots"></i> 10 Comments</span>
-                  </div>
-                  <h2><a href="#">Et harum quidem rerum facilis est et expedita distinctio</a></h2>
-                  <p>Donec quam felis ultricies nec pellentesque eu pretium quis sem nulla consequat massa quis enim.</p>
-                  <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-            </div><!-- End slide item -->
-
-            <div class="swiper-slide">
-              <div class="blog-post-item">
-                <img src="assets/img/blog/blog-post-portrait-5.webp" alt="Blog Image">
-                <div class="blog-post-content">
-                  <div class="post-meta">
-                    <span><i class="bi bi-person"></i> Emma Davis</span>
-                    <span><i class="bi bi-clock"></i> Jan 27, 2025</span>
-                    <span><i class="bi bi-chat-dots"></i> 6 Comments</span>
-                  </div>
-                  <h2><a href="#">Nam libero tempore, cum soluta nobis est eligendi optio</a></h2>
-                  <p>Aenean leo ligula porttitor eu consequat vitae eleifend ac enim aliquam lorem ante dapibus in viverra.</p>
-                  <a href="#" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
-                </div>
-              </div>
-            </div><!-- End slide item -->
+            </div>
+            <!-- Tambahkan slide lain sesuai kebutuhan -->
           </div>
-
         </div>
+      </div>
+    </section>
 
+    <!-- Category Section -->
+    <section id="category-section" class="category-section section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Kategori Budaya</h2>
+        <div><span>Pilih</span> <span class="description-title">Kategori</span></div>
       </div>
 
-    </section><!-- /Featured Posts Section -->
-
-    <!-- Category Section Section -->
-    <section id="category-section" class="category-section section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Category Section</h2>
-        <div> <span class="description-title">Category Section</span></div>
-      </div><!-- End Section Title -->
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <!-- Featured Posts -->
         <div class="row gy-4 mb-4">
           <div class="col-lg-4">
             <article class="featured-post">
               <div class="post-img">
-                <img src="assets/img/blog/blog-post-6.webp" alt="" class="img-fluid" loading="lazy">
+                <img src="{{ asset('assets/img/mandar/ukiran-kayu.jpg') }}" alt="Ukiran Kayu" class="img-fluid" loading="lazy">
               </div>
               <div class="post-content">
                 <div class="category-meta">
-                  <span class="post-category">Health</span>
+                  <span class="post-category">Kerajinan</span>
                   <div class="author-meta">
-                    <img src="assets/img/person/person-f-13.webp" alt="" class="author-img">
-                    <span class="author-name">William G.</span>
-                    <span class="post-date">28 April 2024</span>
+                    <img src="{{ asset('assets/img/person/person-m-10.webp') }}" alt="" class="author-img">
+                    <span class="author-name">Dewi Mandar</span>
+                    <span class="post-date">12 Maret 2025</span>
                   </div>
                 </div>
-                <h2 class="title">
-                  <a href="blog-details.html">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</a>
-                </h2>
+                <h2 class="title"><a href="#">Keindahan Ukiran Kayu Mandar</a></h2>
               </div>
             </article>
           </div>
-
-          <div class="col-lg-4">
-            <article class="featured-post">
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-7.webp" alt="" class="img-fluid" loading="lazy">
-              </div>
-              <div class="post-content">
-                <div class="category-meta">
-                  <span class="post-category">Education</span>
-                  <div class="author-meta">
-                    <img src="assets/img/person/person-m-10.webp" alt="" class="author-img">
-                    <span class="author-name">Emma D.</span>
-                    <span class="post-date">30 May 2024</span>
-                  </div>
-                </div>
-                <h2 class="title">
-                  <a href="blog-details.html">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis</a>
-                </h2>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-4">
-            <article class="featured-post">
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-5.webp" alt="" class="img-fluid" loading="lazy">
-              </div>
-              <div class="post-content">
-                <div class="category-meta">
-                  <span class="post-category">Gaming</span>
-                  <div class="author-meta">
-                    <img src="assets/img/person/person-f-14.webp" alt="" class="author-img">
-                    <span class="author-name">James F.</span>
-                    <span class="post-date">3 June 2024</span>
-                  </div>
-                </div>
-                <h2 class="title">
-                  <a href="blog-details.html">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</a>
-                </h2>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- List Posts -->
-        <div class="row">
-          <div class="col-xl-4 col-lg-6">
-            <article class="list-post">
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-6.webp" alt="" class="img-fluid" loading="lazy">
-              </div>
-              <div class="post-content">
-                <div class="category-meta">
-                  <span class="post-category">Gaming</span>
-                </div>
-                <h3 class="title">
-                  <a href="blog-details.html">Quis autem vel eum iure reprehenderit qui in ea voluptate</a>
-                </h3>
-                <div class="post-meta">
-                  <span class="read-time">2 mins read</span>
-                  <span class="post-date">6 April 2026</span>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-xl-4 col-lg-6">
-            <article class="list-post">
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-9.webp" alt="" class="img-fluid" loading="lazy">
-              </div>
-              <div class="post-content">
-                <div class="category-meta">
-                  <span class="post-category">Gaming</span>
-                </div>
-                <h3 class="title">
-                  <a href="blog-details.html">At vero eos et accusamus et iusto</a>
-                </h3>
-                <div class="post-meta">
-                  <span class="read-time">2 mins read</span>
-                  <span class="post-date">12 June 2026</span>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-xl-4 col-lg-6">
-            <article class="list-post">
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-10.webp" alt="" class="img-fluid" loading="lazy">
-              </div>
-              <div class="post-content">
-                <div class="category-meta">
-                  <span class="post-category">Gaming</span>
-                </div>
-                <h3 class="title">
-                  <a href="blog-details.html">Et harum quidem rerum facilis est et expedita distinctio</a>
-                </h3>
-                <div class="post-meta">
-                  <span class="read-time">2 mins read</span>
-                  <span class="post-date">9 May 2026</span>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-xl-4 col-lg-6">
-            <article class="list-post">
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-2.webp" alt="" class="img-fluid" loading="lazy">
-              </div>
-              <div class="post-content">
-                <div class="category-meta">
-                  <span class="post-category">Gaming</span>
-                </div>
-                <h3 class="title">
-                  <a href="blog-details.html">Nam libero tempore, cum soluta nobis est eligendi</a>
-                </h3>
-                <div class="post-meta">
-                  <span class="read-time">2 mins read</span>
-                  <span class="post-date">15 July 2026</span>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-xl-4 col-lg-6">
-            <article class="list-post">
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-1.webp" alt="" class="img-fluid" loading="lazy">
-              </div>
-              <div class="post-content">
-                <div class="category-meta">
-                  <span class="post-category">Gaming</span>
-                </div>
-                <h3 class="title">
-                  <a href="blog-details.html">Temporibus autem quibusdam et aut officiis debitis</a>
-                </h3>
-                <div class="post-meta">
-                  <span class="read-time">2 mins read</span>
-                  <span class="post-date">18 August 2026</span>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-xl-4 col-lg-6">
-            <article class="list-post">
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-3.webp" alt="" class="img-fluid" loading="lazy">
-              </div>
-              <div class="post-content">
-                <div class="category-meta">
-                  <span class="post-category">Gaming</span>
-                </div>
-                <h3 class="title">
-                  <a href="blog-details.html">Itaque earum rerum hic tenetur a sapiente delectus</a>
-                </h3>
-                <div class="post-meta">
-                  <span class="read-time">2 mins read</span>
-                  <span class="post-date">21 September 2026</span>
-                </div>
-              </div>
-            </article>
-          </div>
+          <!-- Tambahkan artikel kategori lain -->
         </div>
       </div>
-
-    </section><!-- /Category Section Section -->
+    </section>
 
     <!-- Call To Action 2 Section -->
     <section id="call-to-action-2" class="call-to-action-2 section">
-
       <div class="container" data-aos="fade-up" data-aos-delay="100">
-
         <div class="advertise-1 d-flex flex-column flex-lg-row gap-4 align-items-center position-relative">
 
           <div class="content-left flex-grow-1" data-aos="fade-right" data-aos-delay="200">
-            <span class="badge text-uppercase mb-2">Don't Miss</span>
-            <h2>Revolutionize Your Digital Experience Today</h2>
-            <p class="my-4">Strategia accelerates your business growth through innovative solutions and cutting-edge technology. Join thousands of satisfied customers who have transformed their operations.</p>
+            <span class="badge text-uppercase mb-2">Jangan Lewatkan</span>
+            <h2>Rasakan Pesona Budaya Mandar Sekarang</h2>
+            <p class="my-4">Selami keunikan tradisi, tari, dan kuliner khas Mandar yang memikat setiap pengunjung.</p>
 
             <div class="features d-flex flex-wrap gap-3 mb-4">
-              <div class="feature-item">
-                <i class="bi bi-check-circle-fill"></i>
-                <span>Premium Support</span>
-              </div>
-              <div class="feature-item">
-                <i class="bi bi-check-circle-fill"></i>
-                <span>Cloud Integration</span>
-              </div>
-              <div class="feature-item">
-                <i class="bi bi-check-circle-fill"></i>
-                <span>Real-time Analytics</span>
-              </div>
+              <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Tur Budaya</span></div>
+              <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Workshop Tari</span></div>
+              <div class="feature-item"><i class="bi bi-check-circle-fill"></i><span>Demo Masak Tradisional</span></div>
             </div>
 
             <div class="cta-buttons d-flex flex-wrap gap-3">
-              <a href="#" class="btn btn-primary">Start Free Trial</a>
-              <a href="#" class="btn btn-outline">Learn More</a>
+              <a href="#" class="btn btn-primary">Gabung Sekarang</a>
+              <a href="#" class="btn btn-outline">Pelajari Lebih Lanjut</a>
             </div>
           </div>
 
           <div class="content-right position-relative" data-aos="fade-left" data-aos-delay="300">
-            <img src="assets/img/misc/misc-1.webp" alt="Digital Platform" class="img-fluid rounded-4">
+            <img src="{{ asset('assets/img/mandar/event.jpg') }}" alt="Event Budaya Mandar" class="img-fluid rounded-4">
             <div class="floating-card">
-              <div class="card-icon">
-                <i class="bi bi-graph-up-arrow"></i>
-              </div>
-              <div class="card-content">
-                <span class="stats-number">245%</span>
-                <span class="stats-text">Growth Rate</span>
-              </div>
+              <div class="card-icon"><i class="bi bi-people-fill"></i></div>
+              <div class="card-content"><span class="stats-number">500+</span><span class="stats-text">Peserta Terdaftar</span></div>
             </div>
           </div>
 
-          <div class="decoration">
-            <div class="circle-1"></div>
-            <div class="circle-2"></div>
-          </div>
-
+          <div class="decoration"><div class="circle-1"></div><div class="circle-2"></div></div>
         </div>
-
       </div>
-
-    </section><!-- /Call To Action 2 Section -->
+    </section>
 
     <!-- Latest Posts Section -->
     <section id="latest-posts" class="latest-posts section">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Latest Posts</h2>
-        <div><span>Check Our</span> <span class="description-title">Latest Posts</span></div>
-      </div><!-- End Section Title -->
+        <h2>Artikel Terbaru</h2>
+        <div><span>Update</span> <span class="description-title">Budaya Mandar</span></div>
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <div class="row gy-4">
-
           <div class="col-lg-4">
             <article>
-
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-1.webp" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Politics</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a>
-              </h2>
-
+              <div class="post-img"><img src="{{ asset('assets/img/mandar/kapal-phinisi.jpg') }}" alt="Phinisi Mandar" class="img-fluid"></div>
+              <p class="post-category">Transportasi</p>
+              <h2 class="title"><a href="#">Phinisi Mandar: Kapal Tradisional Unggulan</a></h2>
               <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-f-12.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Maria Doe</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 1, 2022</time>
-                  </p>
-                </div>
+                <img src="{{ asset('assets/img/person/person-m-11.webp') }}" alt="" class="img-fluid post-author-img flex-shrink-0">
+                <div class="post-meta"><p class="post-author">Andi P.</p><p class="post-date"><time datetime="2025-05-01">May 1, 2025</time></p></div>
               </div>
-
             </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-4">
-            <article>
-
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-2.webp" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Sports</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-f-13.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Allisa Mayer</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 5, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-4">
-            <article>
-
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-3.webp" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Entertainment</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-m-10.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Mark Dower</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 22, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-4">
-            <article>
-
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-4.webp" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Sports</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Non rem rerum nam cum quo minus olor distincti</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-f-14.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Lisa Neymar</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jun 30, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-4">
-            <article>
-
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-5.webp" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Politics</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Accusamus quaerat aliquam qui debitis facilis consequatur</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-m-11.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Denis Peterson</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Jan 30, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
-          <div class="col-lg-4">
-            <article>
-
-              <div class="post-img">
-                <img src="assets/img/blog/blog-post-6.webp" alt="" class="img-fluid">
-              </div>
-
-              <p class="post-category">Entertainment</p>
-
-              <h2 class="title">
-                <a href="blog-details.html">Distinctio provident quibusdam numquam aperiam aut</a>
-              </h2>
-
-              <div class="d-flex align-items-center">
-                <img src="assets/img/person/person-f-15.webp" alt="" class="img-fluid post-author-img flex-shrink-0">
-                <div class="post-meta">
-                  <p class="post-author">Mika Lendon</p>
-                  <p class="post-date">
-                    <time datetime="2022-01-01">Feb 14, 2022</time>
-                  </p>
-                </div>
-              </div>
-
-            </article>
-          </div><!-- End post list item -->
-
+          </div>
+          <!-- Tambahkan artikel terbaru lainnya -->
         </div>
       </div>
-
-    </section><!-- /Latest Posts Section -->
+    </section>
 
     <!-- Call To Action Section -->
     <section id="call-to-action" class="call-to-action section">
@@ -649,48 +212,39 @@
         <div class="row gy-4 justify-content-between align-items-center">
           <div class="col-lg-6">
             <div class="cta-content" data-aos="fade-up" data-aos-delay="200">
-              <h2>Subscribe to our newsletter</h2>
-              <p>Proin eget tortor risus. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere blandit.</p>
-              <form action="forms/newsletter.php" method="post" class="php-email-form cta-form" data-aos="fade-up" data-aos-delay="300">
+              <h2>Berlangganan Newsletter Mandar</h2>
+              <p>Dapatkan info event, artikel, dan resep khas Mandar langsung ke email Anda.</p>
+              <form action="{{ route('tamu.produk') }}" method="post" class="php-email-form cta-form" data-aos="fade-up" data-aos-delay="300">
+                @csrf
                 <div class="input-group mb-3">
-                  <input type="email" class="form-control" placeholder="Email address..." aria-label="Email address" aria-describedby="button-subscribe">
-                  <button class="btn btn-primary" type="submit" id="button-subscribe">Subscribe</button>
+                  <input type="email" name="email" class="form-control" placeholder="Alamat email..." required aria-label="Email address">
+                  <button class="btn btn-primary" type="submit">Subscribe</button>
                 </div>
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+                <div class="sent-message">Terima kasih, langganan Anda berhasil!</div>
               </form>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="cta-image" data-aos="zoom-out" data-aos-delay="200">
-              <img src="assets/img/cta/cta-1.webp" alt="" class="img-fluid">
+              <img src="{{ asset('assets/img/mandar/newsletter.jpg') }}" alt="Newsletter Mandar" class="img-fluid">
             </div>
           </div>
         </div>
       </div>
-    </section><!-- /Call To Action Section -->
+    </section>
 
   </main>
 
-
-  <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
+  <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ asset('assets/js/main.js') }}"></script>
 
 </body>
 @endsection
-

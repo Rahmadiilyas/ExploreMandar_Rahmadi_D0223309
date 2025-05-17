@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Blog Details - Blogy Bootstrap Template</title>
+    <title>Explore Mandar</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 

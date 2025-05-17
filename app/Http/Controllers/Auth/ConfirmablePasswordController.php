@@ -11,6 +11,7 @@ use Illuminate\View\View;
 
 class ConfirmablePasswordController extends Controller
 {
+    //logika konfirmasi kata sandi.
     /**
      * Show the confirm password view.
      */
@@ -32,9 +33,11 @@ class ConfirmablePasswordController extends Controller
                 'password' => __('auth.password'),
             ]);
         }
-
+//         Menyimpan timestamp saat password berhasil dikonfirmasi ke dalam session dengan kunci 'auth.password_confirmed_at'.
+// Digunakan untuk membatasi validitas waktu konfirmasi password.
         $request->session()->put('auth.password_confirmed_at', time());
 
+        // Mengalihkan pengguna ke halaman tujuan semula (intended), jika tidak ada, maka ke route 'dashboard'.
         return redirect()->intended(route('dashboard', absolute: false));
     }
 }

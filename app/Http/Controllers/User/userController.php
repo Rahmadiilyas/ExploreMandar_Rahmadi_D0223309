@@ -28,9 +28,7 @@ class userController extends Controller
 
     public function index1()
     {
-        $items = keranjang::with('produk')
-            ->where('user_id', Auth::id())
-            ->get();
+        $items = keranjang::with('produk')->where('user_id', Auth::id())->get();
 
         return view('pembeli.keranjang', compact('items'));
     }
@@ -44,9 +42,7 @@ class userController extends Controller
         ]);
 
         // Cek apakah produk sudah ada di keranjang
-        $keranjang = Keranjang::where('user_id', Auth::id())
-            ->where('produk_id', $produk_id)
-            ->first();
+        $keranjang = keranjang::where('user_id', Auth::id())->where('produk_id', $produk_id)->first();
 
         if ($keranjang) {
             // Jika sudah ada, update jumlah
@@ -68,9 +64,7 @@ class userController extends Controller
     // Menghapus item dari keranjang
     public function hapus($id)
     {
-        $item = Keranjang::where('id', $id)
-            ->where('user_id', Auth::id())
-            ->firstOrFail();
+        $item = Keranjang::where('id', $id)->where('user_id', Auth::id())->firstOrFail();
 
         $item->delete();
 
@@ -88,7 +82,7 @@ class userController extends Controller
         
         try {
             // Hitung total harga seluruh keranjang
-            $keranjang = keranjang::where('user_id', auth()->id())->get();
+            $keranjang = keranjang::where('user_id', Auth::id())->get();
 
             // dd($keranjang);
             $totalHarga = $keranjang->sum(function($item) {
@@ -151,9 +145,6 @@ class userController extends Controller
             return redirect()->route('keranjang.checkout')->with('error', 'Terjadi kesalahan: ' . $e->getMessage());
         }
     }
-    
-
-    
     
     
     // Menampilkan detail pesanan untuk pembeli
@@ -283,7 +274,7 @@ public function simpan(Request $request)
     ulasan::create([
         'detail_pesanan_id' => $request->detail_pesanan_id,
         'produk_id' => $detail->produk_id,
-        'user_id' => auth()->id(),
+        'user_id' => Auth::id(),
         'isi' => $request->isi_ulasan,
         'rating' => $request->rating,
         'verifikasi' => false,

@@ -6,7 +6,7 @@
 <div class="content-wrapper">
 
   <div class="col-xl-6 grid-margin stretch-card flex-column">
-            <h5 class="mb-2 text-titlecase mb-4">Tabel Kategori</h5>
+            <h5 class="mb-2 text-titlecase mb-4">Tabel Produk</h5>
           
           
         </div>
@@ -25,8 +25,6 @@
                       <th>Nama Kategori</th>
                       <th>Gambar</th>
                       <th>Stok</th>
-                      
-                      {{-- <th>Actions</th> --}}
                     </tr>
                   </thead>
                   <tbody>
@@ -41,15 +39,10 @@
 
                       <td>{{ $pr->deskripsi }}</td>
                       <td>{{ $pr->kategori->nama ?? '_' }}</td>
-                      <td>{{ $pr->gambar }}</td>
+                      <td>
+                        <img src="{{ asset('storage/' . $pr->gambar) }}" alt="Gambar Produk" width="150">
+                    </td>
                       <td>{{ $pr->stok }}</td>
-                     
-
-                        
-                     
-          
-
-                    
                     </tr>
                     @endforeach
                     

@@ -23,7 +23,7 @@
               Lihat di Google Maps
             </a>
           </p>
-          <a href="{{ route('pembeli.produk') }}" class="btn btn-outline-primary me-2">
+          <a href="{{ route('pembeli.wisata') }}" class="btn btn-outline-primary me-2">
             <i class="bi bi-arrow-left"></i> Kembali
           </a>
           <a href="#deskripsi" class="btn btn-primary">Deskripsi <i class="bi bi-chevron-down"></i></a>
