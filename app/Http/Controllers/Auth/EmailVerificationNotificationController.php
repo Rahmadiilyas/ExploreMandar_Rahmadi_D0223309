@@ -13,7 +13,9 @@ class EmailVerificationNotificationController extends Controller
      */
     public function store(Request $request): RedirectResponse
     {
+          // Cek apakah user saat ini sudah melakukan verifikasi email
         if ($request->user()->hasVerifiedEmail()) {
+            // Jika sudah, maka lanjutkan dan redirect ke halaman dashboard
             return redirect()->intended(route('dashboard', absolute: false));
         }
 

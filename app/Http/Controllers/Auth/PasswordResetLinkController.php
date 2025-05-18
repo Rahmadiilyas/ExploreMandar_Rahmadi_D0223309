@@ -11,31 +11,35 @@ use Illuminate\View\View;
 class PasswordResetLinkController extends Controller
 {
     /**
-     * Display the password reset link request view.
+     * Menampilkan halaman form untuk meminta link reset password.
      */
     public function create(): View
     {
+        // Mengembalikan view 'auth.forgot-password' yang berisi form input email
         return view('auth.forgot-password');
     }
 
     /**
-     * Handle an incoming password reset link request.
+     * Menangani permintaan kirim link reset password.
      *
      * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request): RedirectResponse
     {
+        // Validasi input email: wajib diisi dan harus format email yang valid
         $request->validate([
             'email' => ['required', 'email'],
         ]);
 
-        // We will send the password reset link to this user. Once we have attempted
-        // to send the link, we will examine the response then see the message we
-        // need to show to the user. Finally, we'll send out a proper response.
+        // Mencoba mengirimkan link reset password ke email yang diberikan
         $status = Password::sendResetLink(
-            $request->only('email')
+            $request->only('email')  // Ambil hanya field email dari request
         );
 
+        // Cek hasil pengiriman link reset password:
+        // Jika berhasil, kembali ke halaman sebelumnya dengan pesan status sukses
+        // Jika gagal, kembali ke halaman sebelumnya dengan input email yang sudah dimasukkan
+        // dan tampilkan pesan error sesuai status yang diterima
         return $status == Password::RESET_LINK_SENT
                     ? back()->with('status', __($status))
                     : back()->withInput($request->only('email'))
